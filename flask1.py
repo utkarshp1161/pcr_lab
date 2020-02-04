@@ -356,7 +356,8 @@ def sut():
     #eps = 15 ;
     #epsdp = 0.6;
     #epsr = eps-epsdp;
-    epsr=eps.subtract(epsdp)
+    #epsr=eps.subtract(epsdp)
+    epsr= eps - epsdp*1j
 
 
     #miu = xlsread(f,'D2:D202');
@@ -373,7 +374,7 @@ def sut():
     #%miu   = xlsread(f,'D2:D439');
     #%miudp = xlsread(f,'E2:E439');
     #miur  = miu-1i.*miudp;
-    miur = miu - miudp
+    miur = miu - miudp*1j
 
 
 
@@ -395,10 +396,10 @@ def sut():
     #SEa= 8.68*t*np.sqrt(abs(pi*miu*miu0*freq*sigma))
 
 
-    Zin = Z0*np.sqrt(miur/epsr)*np.tanh((2*pi*freq*t/c)*np.sqrt(miur*epsr))
+    Zin = Z0*np.sqrt(miur/epsr)*np.tanh((1j*(2*pi*freq*t/c))*np.sqrt(miur*epsr))
     X = (Zin-Z0)/(Zin+Z0)
     #%modX = abs(X)
-    RLoss = 20*np.log(abs(X))
+    RLoss = 20*(np.log(abs(X)))
     Z = abs(np.sqrt(miur/epsr)*np.sqrt(miu0/eps0))
     #%RLoss = 20.*log(abs(S11));
 
@@ -429,8 +430,8 @@ def sut():
     df=pd.DataFrame(Final,columns=['freq','EMD','alpha','Rloss'])
    # df.to_csv('sutripto_out.csv',index=False)
 
-    df.to_csv('sutripto_out.csv',index=False)
-    path = 'sutripto_out.csv'
+    df.to_csv('sutripto_out' + str(t)+'.csv',index=False)
+    path = 'sutripto_out' + str(t)+'.csv'
     return send_file(path, as_attachment=True)
 
 
