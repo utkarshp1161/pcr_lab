@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script>
+
+$(document).ready(function(){
+	$("#changecolor").click(function(){
+		$.ajax({
+			url: "http://localhost/reply.json",
+			method: 'Get',
+			dataType: 'json'
+		}).done (function(reply){
+			$(".majorheading").css("color",reply.color)
+		});
+	
+	});
+	
+});
+
+</script>
+</head>
+<body>
+	<h1 class="majorheading"> this is my first program 
+	</h1>
+	This is to show some thing can be done in html
+	<h2> This is  small heading </h2>
+	<h1 class="majorheading"> want to test this guy </h1>
+	<button id="changecolor"> press me </button>
+	<button id="somethingelse"> Dont press me </button>
+</body>
+</html>

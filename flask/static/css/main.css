@@ -1,0 +1,174 @@
+
+body  {
+    background-image: url("/static/pics/bg.jpeg");
+    width : 100%;
+    /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+}
+
+
+
+#div1{
+  width:600px;
+  height:450px;
+  margin-right: 10px;
+  float: right;
+  background-color: lightblue;
+  opacity: .9
+ 
+  
+}
+
+#div2{
+  width:600px;
+  height:600px;
+  float: left;
+  margin-right: 5px;
+  
+}
+
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+
+.refresh_button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=button0]{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 32px 64px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+ width:100%;
+ text-align: center;
+  font-size: 300%;
+  font-style: italic;
+  opacity: .4
+}
+
+input[type=button1]{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+ width:100%;
+ opacity: .3
+
+}
+
+input[type=button2]{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+ width:100%;
+ opacity: .3
+
+}
+input[type=button3]{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+ width:100%;
+ opacity: .3
+
+}
+input[type=button4]{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+ width:100%;
+ opacity: .3
+
+}
+input[type=button5]{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+ width:100%;
+ opacity: .3
+
+}
+input[type=button6]{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+ width:100%;
+ opacity: .3
+
+}
+input[type=button7]{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+ width:100%;
+ opacity: .3
+
+}
+input[type=button8]{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+ width:100%;
+ opacity: .3
+
+}
+
